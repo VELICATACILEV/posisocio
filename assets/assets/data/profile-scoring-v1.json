@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "scoringVersion": "1.1.0",
+  "normalizationMax": 100.0,
+  "capitalDenominators": [36.0, 14.0, 4.0],
+  "capitalMax": [100.0, 100.0, 100.0],
+  "ordinalPoints": [0.0, 25.0, 50.0, 100.0],
+  "graph": {
+    "cspWeight": 0.5,
+    "diplomaWeight": 0.5,
+    "capitalMin": 0.0,
+    "capitalMax": 100.0,
+    "incomeMin": 9190.0,
+    "incomeMax": 60920.0,
+    "incomeCapitalMax": 46960.0
+  },
+  "household": {
+    "monthlyIncomeMultiplier": 12.0,
+    "adultConsumptionUnit": 1.0,
+    "olderChildConsumptionUnit": 0.5,
+    "youngerChildConsumptionUnit": 0.3,
+    "povertyThresholds": {
+      "oneAdult": 16044.0,
+      "twoAdultsUpToOneChild": 32088.0,
+      "twoAdultsTwoChildren": 33684.0
+    }
+  },
+  "defaults": {
+    "profession": "Employés / Employées",
+    "diploma": "baccalauréat général",
+    "school": "Public"
+  },
+  "options": {
+    "school": ["Public", "REP", "Privé"],
+    "digital": [
+      "Smartphone",
+      "Connexion internet",
+      "Imprimante",
+      "Ordinateur",
+      "Nécessaire de bureautique (stylo, cahier, etc.)",
+      "Carte de bibliothèque"
+    ],
+    "comfort": [
+      "Faire un commentaire de texte",
+      "Faire une argumentation sur un sujet",
+      "Expliquer une idée à quelqu’un",
+      "Prendre la parole devant un groupe"
+    ],
+    "familiarActivity": [
+      "Musée / exposition",
+      "Théâtre",
+      "Littérature",
+      "Musique classique",
+      "Cinéma d’auteur",
+      "Arts visuels",
+      "Histoire / patrimoine"
+    ],
+    "householdActivity": [
+      "Mes activités sportives",
+      "Mes activités de loisirs",
+      "Mes activités culturelles",
+      "Mes/nos vacances",
+      "Mes études"
+    ],
+    "favoriteActivity": [
+      "Regarder une série / jouer / réseaux sociaux",
+      "Sport / sorties entre amis",
+      "Concert / cinéma / exposition",
+      "Lecture / théâtre / opéra / musée"
+    ],
+    "moneyUse": [
+      "Les garder pour les dépenses nécessaires",
+      "Acheter quelque chose dont j’ai envie",
+      "Sortir / voyager / faire une expérience",
+      "Acheter un livre, une œuvre, suivre une formation, etc."
+    ],
+    "homeworkHelp": [
+      "Jamais",
+      "Rarement",
+      "Souvent",
+      "Très souvent, dans toutes les matières"
+    ],
+    "careerCategory": [
+      "Travailler surtout avec ses mains / dans l’exécution",
+      "Travailler dans un métier administratif ou commercial",
+      "Être cadre / entrepreneur / professionnel qualifié",
+      "Être intellectuel / artiste / universitaire / profession culturelle"
+    ],
+    "diploma": [
+      "pas de scolarité ou scolarité achevée avant la fin de l'école primaire",
+      "scolarité suivie jusqu'à la fin de l'école primaire ou achevée avant la fin du collège",
+      "scolarité jusqu'à la fin du collège ou au-delà",
+      "certificat d'études primaires (CEP)",
+      "BEPC, brevet élémentaire, brevet des collèges, DNB",
+      "CAP, BEP ou diplôme de niveau équivalent",
+      "baccalauréat général",
+      "baccalauréat technologique",
+      "brevet supérieur",
+      "capacité en droit",
+      "baccalauréat professionnel",
+      "brevet professionnel, de technicien ou d'enseignement",
+      "BTS, DUT, Deug, Deust, diplôme de la santé ou du social de niveau bac+2",
+      "licence",
+      "licence professionnelle",
+      "maîtrise, diplôme équivalent de niveau bac+3 ou bac+4",
+      "Master, DEA, DESS",
+      "diplôme de grande école de niveau bac+5, doctorat de santé",
+      "Doctorat de recherche (hors santé)"
+    ],
+    "profession": [
+      "Agriculteurs exploitants / Agricultrices exploitantes",
+      "Artisans / Artisanes, commerçants / commerçantes et chefs / cheffes d'entreprise",
+      "Cadres et professions intellectuelles supérieures",
+      "Professions intermédiaires",
+      "Employés / Employées",
+      "Ouvriers / Ouvrières"
+    ]
+  },
+  "scores": {
+    "school": {"Public": 50.0, "REP": 0.0, "Privé": 100.0},
+    "profession": {
+      "Agriculteurs exploitants / Agricultrices exploitantes": 20.0,
+      "Artisans / Artisanes, commerçants / commerçantes et chefs / cheffes d'entreprise": 55.0,
+      "Cadres et professions intellectuelles supérieures": 90.0,
+      "Professions intermédiaires": 70.0,
+      "Employés / Employées": 45.0,
+      "Ouvriers / Ouvrières": 30.0
+    },
+    "diploma": {
+      "pas de scolarité ou scolarité achevée avant la fin de l'école primaire": 5.0,
+      "scolarité suivie jusqu'à la fin de l'école primaire ou achevée avant la fin du collège": 10.0,
+      "scolarité jusqu'à la fin du collège ou au-delà": 15.0,
+      "certificat d'études primaires (CEP)": 20.0,
+      "BEPC, brevet élémentaire, brevet des collèges, DNB": 25.0,
+      "CAP, BEP ou diplôme de niveau équivalent": 30.0,
+      "baccalauréat général": 50.0,
+      "baccalauréat technologique": 40.0,
+      "brevet supérieur": 35.0,
+      "capacité en droit": 55.0,
+      "baccalauréat professionnel": 35.0,
+      "brevet professionnel, de technicien ou d'enseignement": 40.0,
+      "BTS, DUT, Deug, Deust, diplôme de la santé ou du social de niveau bac+2": 60.0,
+      "licence": 75.0,
+      "licence professionnelle": 70.0,
+      "maîtrise, diplôme équivalent de niveau bac+3 ou bac+4": 85.0,
+      "Master, DEA, DESS": 90.0,
+      "diplôme de grande école de niveau bac+5, doctorat de santé": 95.0,
+      "Doctorat de recherche (hors santé)": 100.0
+    },
+    "digital": {
+      "Smartphone": 15.3846153846154,
+      "Connexion internet": 15.3846153846154,
+      "Imprimante": 15.3846153846154,
+      "Ordinateur": 38.4615384615385,
+      "Nécessaire de bureautique (stylo, cahier, etc.)": 7.69230769230769,
+      "Carte de bibliothèque": 7.69230769230769
+    },
+    "householdActivity": {
+      "Mes activités sportives": 6.5,
+      "Mes activités de loisirs": 6.5,
+      "Mes activités culturelles": 6.5,
+      "Mes/nos vacances": 6.5,
+      "Mes études": 16.25
+    },
+    "comfort": {
+      "Faire un commentaire de texte": 16.6666666666667,
+      "Faire une argumentation sur un sujet": 33.3333333333333,
+      "Expliquer une idée à quelqu’un": 16.6666666666667,
+      "Prendre la parole devant un groupe": 33.3333333333333
+    },
+    "familiarActivity": {
+      "Musée / exposition": 18.1818181818182,
+      "Théâtre": 9.09090909090909,
+      "Littérature": 9.09090909090909,
+      "Musique classique": 18.1818181818182,
+      "Cinéma d’auteur": 18.1818181818182,
+      "Arts visuels": 18.1818181818182,
+      "Histoire / patrimoine": 9.09090909090909
+    }
+  },
+  "shares": {
+    "income": [0.0, 4.0, 0.0],
+    "ownership": [0.0, 4.0, 0.0],
+    "digital": [0.0, 1.0, 0.0],
+    "householdActivity": [0.0, 1.0, 0.0],
+    "financialEmergency": [0.0, 2.0, 0.0],
+    "homeworkHelp": [4.0, 0.0, 1.0],
+    "comfort": [4.0, 0.0, 1.0],
+    "familiarActivity": [6.0, 0.0, 0.0],
+    "favoriteActivity": [4.0, 0.0, 0.0],
+    "moneyUse": [2.0, 0.0, 0.0],
+    "careerCategory": [6.0, 0.0, 0.0],
+    "profession": [6.0, 0.0, 0.0],
+    "diploma": [2.0, 0.0, 1.0],
+    "school": [2.0, 2.0, 1.0]
+  }
+}
